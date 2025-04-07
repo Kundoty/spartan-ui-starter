@@ -13,6 +13,23 @@
 
 .badge {
   font-size: var(--small-text);
+  background: var(--brand-primary);
+  color: var(--text-color);
+  border: var(--border-radius-xl);
+  padding: var(--spacing-xs for top/bottom, --spacing-sm for left/right)
 }
 
 /* Badge Variants */
+
+.success {
+  background: var(--success-bg);
+  color: var(--success-text);
+}
+.warning{
+  background: var(--warning-bg);
+  color: var(--warning-text);
+}
+.danger {
+  background: var(--danger-bg);
+  color: var(--danger-text);
+}

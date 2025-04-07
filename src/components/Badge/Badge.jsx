@@ -13,8 +13,11 @@ import styles from "./Badge.module.css";
  * 3. Add variants to docs/BadgeDocs.jsx
  */
 
-const Badge = ({ label }) => {
-  return <span className={`${styles.badge}`}>{label}</span>;
+const Badge = ({ 
+  label,
+  varient = ''
+ }) => {
+  return <span className={`${styles.badge} ${styles[varient]}`}>{label}</span>;
 };
 
 export default Badge;
